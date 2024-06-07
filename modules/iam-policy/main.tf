@@ -1,3 +1,7 @@
+provider "aws" {
+  region = "ap-south-1"
+}
+
 resource "aws_iam_policy" "policy" {
   count = var.create_policy ? 1 : 0
 
